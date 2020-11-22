@@ -1,0 +1,241 @@
+:root {
+    /* color */
+    --color-red: #d30b2f;
+    --color-gray: #3d3d3d;
+    --color-dark-gray: #2b292e;
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'Texturina', serif;
+    font-size: 10px;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    max-width: 1200px;
+}
+
+/* nav */
+
+#nav {
+    padding: 2rem 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav__logo {
+    width: 120px;
+}
+
+.nav__lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__lists a {
+    color: #3d3d3d;
+}
+
+.nav__lists li{
+    color: #3d3d3d;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-left: 6rem;
+}
+
+.nav__lists li:first-child{
+    margin-left: 0;
+    margin-right: 4rem;
+}
+
+.nav__lists i{
+    margin-left: .5rem;
+    color: #d30b2f;
+}
+
+.nav__btn {
+    background-color: #d30b2f;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+/* main slide */
+#main__slide {
+    position: relative;
+}
+
+.swiper-container {
+    z-index: 0 !important;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.slide__title {
+    position: absolute;
+    top: 340px;
+    left: 90px;
+    color: #d30b2f;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.slide2 .slide__title {
+    color: white;
+    text-shadow: 2px 2px 6px rgb(82, 82, 82);
+}
+
+.slide4 .slide__title {
+    top: 80px;
+    color: #333333;
+    font-size: 6.5rem;
+    line-height: 85px;
+}
+
+.slide4 .slide__sub-title {
+    position: absolute;
+    top: 280px;
+    left: 90px;
+    color: #333333;
+    font-size: 2.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.slide4 button {
+    position: absolute;
+    left: 90px;
+    top: 400px;
+    background-color: #d30b2f;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 35px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 3.5rem;
+}
+
+.background__img1 {
+    background: url("images/slide/main1.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.background__img2 {
+    background: url("images/slide/main2.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.background__img3 {
+    background: url("images/slide/main3.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.background__img4 {
+    background: url("images/slide/tablet_main0.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: gray !important;
+}
+
+.products {
+    margin: 0 auto;
+    background-color: white;
+    transform: translateY(-100px);
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 1px 10px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 1px 10px 0px rgba(50, 50, 50, 0.25);
+    padding: 2.5rem 6rem;
+}
+
+.products__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products__list li {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 3.5rem;
+    text-align: right;
+}
+
+.products__list li:first-child{
+    margin-left: 0;
+}
+
+
+.products__list h2 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.products__list span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.products__list span::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 20px;
+    top: -1px;
+    width: 53px;
+    height: 25px;
+    background-color: #fad900;
+    border-radius: 20px;
+}
+
+
+.products__list span i {
+    margin-left: 1rem;
+}
+
+
+.products__list img {
+    width: 200px;
+}

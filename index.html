@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농심켈로그(주) | Kellogg Korea</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Texturina:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- SLIDE -->
+    <link rel="stylesheet" href="swiper-5.4.3/package/css/swiper.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav id="nav" class="section">
+        <ul class="nav__lists">
+            <li><img class="nav__logo" src="images/logo_768.png" alt=""></li>
+            <li><a href="">Brands & Products</a></li>
+            <li><a href="">Cereal & Nutrition</a></li>
+            <li><a href="">Better Days</a> </li>
+            <li><a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
+        </ul>
+    </nav>
+    <!-- main slide -->
+    <section id="main__slide">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide1">
+                        <span class="slide__title"># 좋은 것만 드려요 ~</span>
+                        <div class="background__img1"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide2">
+                        <span class="slide__title"># 좋은 것만 드려요 ~</span>
+                        <div class="background__img2"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide3">
+                        <span class="slide__title"># 좋은 것만 드려요 ~</span>
+                        <div class="background__img3"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide4">
+                        <span class="slide__title">Kellogg's<br>Online Shop</span>
+                        <span class="slide__sub-title">맛과 영양을 고루 갖춘 켈로그 제품을<br>온라인에서 빠르게 주문하고 받아보세요!</span>
+                        <button>kellogg's Shop 보기</button>
+                        <div class="background__img4"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- products -->
+        <div class="products section">
+            <ul class="products__list">
+                <li>
+                    <h2>켈로그<br>제품</h2>
+                    <span>더보기<i class="fas fa-long-arrow-alt-right"></i></span>
+                </li>
+                <li><a href=""><img src="images/product/img_product_five_grain_checkschoco.png" alt=""></a></li>
+                <li><a href=""><img src="images/product/chaw_gcc_1x.png" alt=""></a></li>
+                <li><a href=""><img src="images/product/bg_1x.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/product/img_product_checkschocobar.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="swiper-5.4.3/package/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            speed: 300,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
