@@ -32,6 +32,7 @@ a {
 
 .section {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* nav */
@@ -209,16 +210,18 @@ a {
 .products__list h2 {
     font-weight: 600;
     font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 45px;
 }
 
 .products__list span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 1rem;
     position: relative;
 }
 
-.products__list span::after {
+.products__list span::after,
+.sub__title .more__btn::after  {
     content: "";
     z-index: -1;
     position: absolute;
@@ -231,11 +234,129 @@ a {
 }
 
 
-.products__list span i {
+.products__list span i, 
+.more__btn i {
     margin-left: 1rem;
 }
 
 
 .products__list img {
     width: 200px;
+}
+
+/* sub slide */
+
+.sub1 {
+    display: flex;
+}
+
+.sub__img, .sub__text {
+    width: 50%;
+}
+
+.sub__img img {
+    width: 100%
+}
+
+.sub__text {
+    background-color: #fff8f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 6rem 4rem;
+}
+
+.sub__title .title__icon1 {
+    background: url("images/desc/product_logo_granola.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sub__title h1 {
+    color: #a52727;
+    background-color: #f8d74c;
+    display: inline;
+    padding: 1.55rem 2rem 1.55rem 8rem;
+    font-size: 20px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.sub__title p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    margin: 4rem 0;
+    line-height: 37px;
+}
+
+.sub__title .more__btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 0;
+}
+
+.sub__rows {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.sub__row1 .sub__icon {
+    background: url("images/desc/product_weight.png") no-repeat;
+    width: 55px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.sub__row2 .sub__icon {
+    background: url("images/desc/product_end_date.png") no-repeat;
+    width: 55px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.sub__row3 .sub__icon {
+    background: url("images/desc/product_calory.png") no-repeat;
+    width: 55px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.sub__rows span {
+    display: block;
+} 
+
+.sub__name1 {
+    font-size: 17px;
+    margin: 2rem 0;
+}
+
+.sub__row3 b {
+    font-size: 11px;
+    font-weight: 300;   
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.sub__name2 {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ececec;
+    padding: 1.5rem 4rem;
+}
+
+.sub__row3 .sub__name1 {
+    margin: 2rem 0 0 0;
 }
