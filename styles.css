@@ -246,7 +246,17 @@ a {
 
 /* sub slide */
 
-.sub1 {
+.sub__slide-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+
+
+.sub {
     display: flex;
 }
 
@@ -273,6 +283,18 @@ a {
     top: 0;
     left: 0;
 }
+
+
+.sub__title .title__icon2 {
+    background: url("images/desc/product_logo_kelloggbar.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
 
 .sub__title h1 {
     color: #a52727;
@@ -303,7 +325,7 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 5.5rem;
     text-align: center;
 }
 
