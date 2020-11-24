@@ -41,16 +41,19 @@ a {
     padding: 2rem 0;
     margin: 0 auto;
     position: relative;
+    display: flex;
 }
 
-.nav__logo {
+.nav__logo img {
     width: 120px;
+    display: block;
 }
 
 .nav__lists {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 70px;
 }
 
 .nav__lists a {
@@ -83,6 +86,23 @@ a {
     font-weight: 800;
     padding: .5rem 1rem;
     border-radius: 5px;
+}
+
+.toggle__btn {
+    display: none;
+}
+
+.toggle__btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    position: absolute;
+    right: 2rem;
+}
+
+.toggle__btn i {
+    color: #757575;
 }
 
 /* main slide */
@@ -381,4 +401,325 @@ a {
 
 .sub__row3 .sub__name1 {
     margin: 2rem 0 0 0;
+}
+
+/* more */
+#more {
+    margin-top: 7rem;
+}
+
+.more__wrap {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.more__wrap li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more__wrap li:nth-child(1) {
+    background: url("images/more/img_nutritional_off_1.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(1):hover{
+    background: url("images/more/img_m_nutritional_on_1.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(2) {
+    background: url("images/more/img_nutritional_off_2.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(2):hover {
+    background: url("images/more/img_m_nutritional_on_2.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(3) {
+    background: url("images/more/img_nutritional_off_3.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(3):hover {
+    background: url("images/more/img_m_nutritional_on_3.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+
+.more__wrap li:nth-child(4) {
+    background: url("images/more/img_nutritional_off_4.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+.more__wrap li:nth-child(4):hover {
+    background: url("images/more/img_m_nutritional_on_4.png") no-repeat;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+
+.more__wrap a {
+    color: #333333;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.more__wrap img {
+    width: 100px;
+}
+
+.more__wrap a p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 0 0 ;
+}
+
+.more__wrap a span {
+    font-size: 13px;
+    text-decoration: underline;
+    font-family: 'Texturina', serif;
+    font-weight: 700;
+}
+
+/* social */
+
+#social {
+    margin-top: 3rem;
+}
+
+.social__title {
+    background-color: #d30b2f;
+    display: block;
+    width: 400px;
+    padding:1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.social__title img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.social__logo {
+    position: relative;
+}
+
+.social__logo::before {
+    content: "";
+    display: block;
+    border-bottom: 6px double white;
+    width: 125px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.social__logo::after {
+    content: "";
+    display: block;
+    border-bottom: 6px double white;
+    width: 125px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.social__title h3 {
+    color: white;
+    font-size: 35px;
+}
+
+.social__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.social__youtube {
+    width: 700px;
+    height: 490px;
+    position: relative;
+}
+
+.social__youtube::before {
+    content: "";
+    display: block;
+    background: url("images/social/ico_play.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 5%);
+    top: calc(50% - 5%);
+    position: absolute;
+}
+
+.social__youtube::after {
+    content: "";
+    display: block;
+    background: url("images/social/ico_youtube.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: cover;
+}
+
+.social__youtube img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.social__row1, .social__row2 {
+    display: flex;
+}
+
+.social__row2 {
+    margin-top: 1rem;
+}
+
+.social__row1 img ,.social__row2 img {
+    width: 240px;
+    height: 240px;
+    display: block;
+}
+
+.social__row1 .box,
+.social__row2 .box {
+    margin-left: 1rem;
+}
+
+.social__ins {
+    position: relative;
+}
+
+.social__ins::after {
+    content: "";
+    display: block;
+    background: url("images/social/ico_instagram.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: cover;
+}
+
+.social__blog {
+    position: relative;
+}
+
+.social__blog::after {
+    content: "";
+    display: block;
+    background: url("images/social/ico_naver_blog.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: cover;
+}
+
+/* footer */
+
+#footer {
+    margin-top: 10rem;
+    background-color: #d30b2f;
+    padding: 2rem 0;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footer__right {
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer__icons {
+    display: flex;
+}
+
+.footer__icons a{
+    display: block;
+}
+
+.footer__icon-youtube {
+    background: url("images/footer/icon_foot_youtube.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__icon-instagram {
+    background: url("images/footer/icon_foot_instagram.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.footer__icon-naver-blog {
+    background: url("images/footer/icon_foot_naver_blog.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 8px;
+}
+
+.footer__language{
+    margin-left: 10px;
+    color: white;
+    width: 200px;
+    padding: .1rem 2rem .1rem 0.1rem;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media (max-width: 1180px) {
+    #nav {
+        padding: 2rem 2rem;
+    }
+
+    .toggle__btn {
+        display: block;
+    }
+
+    .nav__lists {
+        display: none;
+    }
+
+    .slide__title {
+        font-size: 5rem;
+    }
+    
 }

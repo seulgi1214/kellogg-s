@@ -19,14 +19,15 @@
 <body>
     <!-- nav -->
     <nav id="nav" class="section">
+        <div class="nav__logo"><img src="images/logo_768.png" alt=""></div>
         <ul class="nav__lists">
-            <li><img class="nav__logo" src="images/logo_768.png" alt=""></li>
             <li><a href="">Brands & Products</a></li>
             <li><a href="">Cereal & Nutrition</a></li>
             <li><a href="">Better Days</a> </li>
             <li><a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a></li>
             <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
         </ul>
+        <button class="toggle__btn"><i class="fas fa-bars"></i></button>
     </nav>
     <!-- main slide -->
     <section id="main__slide">
@@ -233,7 +234,96 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+    <section id="more" class="section">
+        <ul class="more__wrap">
+            <li>
+                <a href="">
+                    <img src="images/more/ico_nutritional_on_1.png" alt="">
+                    <p>시리얼의 영양<br>살펴보기</p>
+                    <span>Views more</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/more/ico_nutritional_on_2.png" alt="">
+                    <p>씨앗에서 식탁까지,<br>책임감 있는 원료 관리</p>
+                    <span>Views more</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/more/ico_nutritional_on_3.png" alt="">
+                    <p>영양정보<br>들여다보기</p>
+                    <span>Views more</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/more/ico_nutritional_on_4.png" alt="">
+                    <p>시리얼의<br>혁신</p>
+                    <span>Views more</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section id="social" class="section">
+        <div class="social__title">
+            <div class="social__logo"><img src="images/social/logo_white.png" alt=""></div>
+            <h3>Our Social Channels</h3>
+        </div>
+        <div class="social__wrap">
+            <div class="social__youtube">
+                <a target="_blank" href="https://www.youtube.com/watch?v=ALYvE8PCvaE&feature=youtu.be">
+                    <img src="images/social/img_youtube.png" alt="">
+                </a>
+            </div>
+            <div class="social__rows">
+                <div class="social__row1">
+                    <div class="social__ins">
+                        <a target="_blank" href="https://www.instagram.com/p/CHbfT1oHlir/">
+                            <img src="images/social/img_Instagram_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box social__ins">
+                        <a target="_blank" href="https://www.instagram.com/p/CHKjOUsnPF_/">
+                            <img src="images/social/img_Instagram_2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="social__row2">
+                    <div class="social__blog">
+                        <a target="_blank" href="https://blog.naver.com/kelloggs_kr/222122889091">
+                            <img src="images/social/img_naver_blog_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box social__blog">
+                        <a target="_blank" href="https://blog.naver.com/kelloggs_kr/222143008290">
+                            <img src="images/social/img_naver_blog_2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="section footer__wrap">
+            <div>
+                <img src="images/footer/logo_white.png" alt="">
+            </div>
+            <div class="footer__right">
+                <p>© 2020 KELLOGG Co Ltd ALL RIGHT RESERVED.</p>
+            </div>
+            <div class="footer__icons">
+                <a class="footer__icon-youtube" target="_blank" href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw" title="유투브 새창으로 이동"></a>
+                <a class="footer__icon-instagram" target="_blank" href="https://www.instagram.com/kelloggsnutrition_kr/?utm_source=ig_profile_share&igshid=dhk0i3mz74xh" title="인스타그램 새창으로 이동"></a>
+                <a class="footer__icon-naver-blog" target="_blank" href="https://blog.naver.com/kelloggs_kr" title="네이버블로그 새창으로 이동"></a>
+                <select name="sss" id="" class="footer__language">
+                    <option value="" selected>Language<i class="fas fa-chevron-down"></i></option>
+                </select>
+            </div>
+        </div>
 
+    </footer>
     <script src="swiper-5.4.3/package/js/swiper.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -253,9 +343,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
-
-
 
     </script>
     <script>
