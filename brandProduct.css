@@ -1,0 +1,141 @@
+/* main */
+#main {
+    position: relative;
+}
+
+#main .main__bg {
+    background: url('images/brand/key_visual_products_list_1920.png') no-repeat center 0;
+    width: 100%;
+    height: 300px;
+}
+
+.main__title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    position: absolute;
+    left: 20rem;
+    top: 6rem;
+    line-height: 70px;
+    color: #2b292e;
+    text-shadow: 1px 1px 2px white;
+}
+
+/* search */
+
+#search {
+    width: 90%;
+    margin-top: 5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 5rem;
+}
+
+.search__input {
+    position: relative;
+}
+
+.search__input input {
+    width: 100%;
+    border: 2px solid #D20B2F;
+    padding: 1.5rem 1rem;
+    font-size: 18px;  
+    
+}
+
+.search__input input::placeholder {
+    color: gainsboro;
+    font-weight: 500;
+}
+
+#search i {
+    font-size: 25px;
+    color: #D20B2F;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.search__keyword {
+    margin-top: 4rem;
+}
+
+.search__keyword h5 {
+    margin-right: 2rem;
+    font-size: 16px;
+
+}
+
+.search__keyword__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search__keyword span {
+    margin-right: 2rem;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    padding: .6rem 1.5rem;
+    margin-top: 1rem;
+}
+
+/* product */
+#product {
+    width: 90%;
+    margin-top: 7rem;
+}
+
+#product h1 {
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#product b {
+    font-size: 18px;
+    font-weight: 200;
+    color: #9c9c9c;
+    margin-left: 1rem;
+}
+
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 3rem;
+}
+
+.product__list li {
+    margin: 0 0 4rem 0;
+}
+
+
+.product__list a {
+    color: #333333;
+}
+
+.product__list span {
+    display: block;
+    font-size: 18px;
+}
+
+/* 미디어쿼리 */
+
+
+@media (max-width: 1180px) {
+    .product__list li {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    #main .main__bg {
+    background: url('images/brand/key_visual_products_list_768.png') no-repeat center 0;
+    }
+    .main__title {
+        left: 16rem;
+    }
+}

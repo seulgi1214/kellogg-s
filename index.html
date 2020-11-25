@@ -18,11 +18,11 @@
 
 <body>
     <!-- nav -->
-    <nav id="nav" class="section">
-        <div class="nav__logo"><img src="images/logo_768.png" alt=""></div>
+    <nav id="nav" class="section section__container">
+        <div class="nav__logo"><a href="brandProduct/brandProduct.html"><img src="images/logo_768.png" alt=""></a></div>
         <ul class="nav__lists">
-            <li><a href="">Brands & Products</a></li>
-            <li><a href="">Cereal & Nutrition</a></li>
+            <li><a href="brandProduct.html">Brands & Products</a></li>
+            <li><a href="cereal.html">Cereal & Nutrition</a></li>
             <li><a href="">Better Days</a> </li>
             <li><a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a></li>
             <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
@@ -67,12 +67,12 @@
             <div class="swiper-button-prev"></div>
         </div>
         <!-- products -->
-        <div class="products section">
+        <div class="products section section__container">
+            <div class="product__title">
+                <h2>켈로그<br>제품</h2>
+                <span>더보기<i class="fas fa-long-arrow-alt-right"></i></span>
+            </div>
             <ul class="products__list">
-                <li>
-                    <h2>켈로그<br>제품</h2>
-                    <span>더보기<i class="fas fa-long-arrow-alt-right"></i></span>
-                </li>
                 <li><a href=""><img src="images/product/img_product_five_grain_checkschoco.png" alt=""></a></li>
                 <li><a href=""><img src="images/product/chaw_gcc_1x.png" alt=""></a></li>
                 <li><a href=""><img src="images/product/bg_1x.jpg" alt=""></a></li>
@@ -81,7 +81,7 @@
         </div>
     </section>
     <!-- sub slide -->
-    <section id="sub__slide" class="section">
+    <section id="sub__slide" class="section section__container">
         <div class="sub__slide-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -91,9 +91,7 @@
                         </div>
                         <div class="sub__text">
                             <div class="sub__title">
-                                <h1>
-                                    <div class="title__icon1"></div>그래놀라
-                                </h1>
+                                <h1 class="sub__title-1">그래놀라</h1>
                                 <p>바삭하게 구운 곡물을 색다르게,<br>스낵으로 즐길 수 있는 한입 그래놀라</p>
                                 <span class="more__btn">더보기<i class="fas fa-long-arrow-alt-right"></i></span>
                             </div>
@@ -127,9 +125,7 @@
                         </div>
                         <div class="sub__text">
                             <div class="sub__title">
-                                <h1>
-                                    <div class="title__icon1"></div>그래놀라
-                                </h1>
+                                <h1 class="sub__title-1">그래놀라</h1>
                                 <p>통곡물의 영양이 가득한<br>리얼 그래놀라 오리지널</p>
                                 <span class="more__btn">더보기<i class="fas fa-long-arrow-alt-right"></i></span>
                             </div>
@@ -163,9 +159,7 @@
                         </div>
                         <div class=" sub__text">
                             <div class="sub__title">
-                                <h1>
-                                    <div class="title__icon2"></div>켈로그바
-                                </h1>
+                                <h1 class="sub__title-2">켈로그라</h1>
                                 <p>첵스초코 시리얼의 진한 초콜릿 맛을<br>그대로 담은 첵스초코펀 오리지널바</p>
                                 <span class="more__btn">더보기<i class="fas fa-long-arrow-alt-right"></i></span>
                             </div>
@@ -188,8 +182,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -199,9 +191,7 @@
                         </div>
                         <div class=" sub__text">
                             <div class="sub__title">
-                                <h1>
-                                    <div class="title__icon2"></div>초코시리얼
-                                </h1>
+                                <h1 class="sub__title-2">초코시리얼</h1>
                                 <p>오곡으로 맛있게 채운 한끼.<br>진한 초콜릿 맛 첵스초코!</p>
                                 <span class="more__btn">더보기<i class="fas fa-long-arrow-alt-right"></i></span>
                             </div>
@@ -224,8 +214,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -234,7 +222,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-    <section id="more" class="section">
+    <section id="more" class="section section__container">
         <ul class="more__wrap">
             <li>
                 <a href="">
@@ -266,7 +254,7 @@
             </li>
         </ul>
     </section>
-    <section id="social" class="section">
+    <section id="social" class="section section__container">
         <div class="social__title">
             <div class="social__logo"><img src="images/social/logo_white.png" alt=""></div>
             <h3>Our Social Channels</h3>
@@ -306,8 +294,8 @@
         </div>
     </section>
     <footer id="footer">
-        <div class="section footer__wrap">
-            <div>
+        <div class="section section__container footer__wrap">
+            <div class="footer__logo">
                 <img src="images/footer/logo_white.png" alt="">
             </div>
             <div class="footer__right">
@@ -322,18 +310,18 @@
                 </select>
             </div>
         </div>
-
     </footer>
+    <button class="upBtn"><i class="fas fa-arrow-up"></i></button>
     <script src="swiper-5.4.3/package/js/swiper.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            speed: 300,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            // speed: 300,
+            // spaceBetween: 30,
+            // centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -344,9 +332,6 @@
             },
         });
 
-    </script>
-    <script>
-
         var swiper = new Swiper('.sub__slide-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -354,7 +339,16 @@
             },
         });
 
+        //페이지 상단으로 이동하는 이벤트
+        const upBtn = document.querySelector('.upBtn');
+
+        function goToUpHandler() {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        }
+        upBtn.addEventListener('click', goToUpHandler)
+
     </script>
+
 </body>
 
 </html>

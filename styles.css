@@ -17,6 +17,11 @@ html, body, ul {
     font-size: 10px;
 }
 
+
+body {
+    background-color: #fbfbfb;
+}
+
 h1,h2,h3,h4,h5 {
     margin: 0;
     padding: 0;
@@ -31,14 +36,18 @@ a {
 }
 
 .section {
-    max-width: 1200px;
     margin: 0 auto;
+} 
+
+.section__container{
+    max-width: 1200px;
 }
+
 
 /* nav */
 
 #nav {
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -69,7 +78,6 @@ a {
 
 .nav__lists li:first-child{
     margin-left: 0;
-    margin-right: 4rem;
 }
 
 .nav__lists i{
@@ -168,28 +176,32 @@ a {
     background: url("images/slide/main1.png") no-repeat;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 85vh;
+    background-size: 100% 100%;
 }
 
 .background__img2 {
     background: url("images/slide/main2.png") no-repeat;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 85vh;
+    background-size: 100% 100%;
 }
 
 .background__img3 {
     background: url("images/slide/main3.png") no-repeat;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 85vh;
+    background-size: 100% 100%;
 }
 
 .background__img4 {
     background: url("images/slide/tablet_main0.png") no-repeat;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 85vh;
+    background-size: 100% 100%;
 }
 
 .swiper-button-next,
@@ -198,7 +210,6 @@ a {
 }
 
 .products {
-    margin: 0 auto;
     background-color: white;
     transform: translateY(-100px);
     z-index: 1;
@@ -207,19 +218,24 @@ a {
     -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow:    0px 1px 10px 0px rgba(50, 50, 50, 0.25);
     box-shadow:         0px 1px 10px 0px rgba(50, 50, 50, 0.25);
-    padding: 2.5rem 6rem;
+    padding: 2.5rem 2rem 2.5rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.product__title {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: right;
 }
 
 .products__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .products__list li {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-left: 3.5rem;
-    text-align: right;
+    margin-left: 2rem;
 }
 
 .products__list li:first-child{
@@ -227,20 +243,20 @@ a {
 }
 
 
-.products__list h2 {
+.product__title h2 {
     font-weight: 600;
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 45px;
 }
 
-.products__list span {
+.product__title span {
     font-size: 1.6rem;
     font-weight: 600;
     position: relative;
 }
 
-.products__list span::after,
+.product__title span::after,
 .sub__title .more__btn::after  {
     content: "";
     z-index: -1;
@@ -261,11 +277,13 @@ a {
 
 
 .products__list img {
-    width: 200px;
+    width: 12vw;
 }
 
 /* sub slide */
-
+#sub__slide {
+    width: 90%;
+}
 .sub__slide-container {
     margin-left: auto;
     margin-right: auto;
@@ -285,7 +303,9 @@ a {
 }
 
 .sub__img img {
-    width: 100%
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .sub__text {
@@ -294,40 +314,38 @@ a {
     padding: 6rem 4rem;
 }
 
-.sub__title .title__icon1 {
-    background: url("images/desc/product_logo_granola.png") no-repeat;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-
-.sub__title .title__icon2 {
-    background: url("images/desc/product_logo_kelloggbar.png") no-repeat;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-
 .sub__title h1 {
     color: #a52727;
     background-color: #f8d74c;
-    display: inline;
+    display: inline-block;
     padding: 1.55rem 2rem 1.55rem 8rem;
     font-size: 20px;
     border-radius: 30px;
     position: relative;
 }
 
+.sub__title .sub__title-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    background: url("images/desc/product_logo_granola.png") no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.sub__title .sub__title-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    background: url("images/desc/product_logo_kelloggbar.png") no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
 .sub__title p {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     color: #333333;
     margin: 4rem 0;
@@ -393,7 +411,7 @@ a {
 }
 
 .sub__name2 {
-    font-size: 18px;
+    font-size: 1.7rem;
     font-weight: 700;
     background-color: #ececec;
     padding: 1.5rem 4rem;
@@ -406,12 +424,11 @@ a {
 /* more */
 #more {
     margin-top: 7rem;
+    width: 90%;
 }
 
 .more__wrap {
     display: flex;
-    /* justify-content: center; */
-    flex-wrap: wrap;
 }
 
 .more__wrap li {
@@ -422,42 +439,42 @@ a {
 
 .more__wrap li:nth-child(1) {
     background: url("images/more/img_nutritional_off_1.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(1):hover{
     background: url("images/more/img_m_nutritional_on_1.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(2) {
     background: url("images/more/img_nutritional_off_2.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(2):hover {
     background: url("images/more/img_m_nutritional_on_2.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(3) {
     background: url("images/more/img_nutritional_off_3.png") no-repeat;
-    width: 300px;
+    width: 25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(3):hover {
     background: url("images/more/img_m_nutritional_on_3.png") no-repeat;
-    width: 300px;
+    width: 25%;
     height: 600px;
     background-size: cover;
 }
@@ -465,14 +482,14 @@ a {
 
 .more__wrap li:nth-child(4) {
     background: url("images/more/img_nutritional_off_4.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
 
 .more__wrap li:nth-child(4):hover {
     background: url("images/more/img_m_nutritional_on_4.png") no-repeat;
-    width: 300px;
+    width:  25%;
     height: 600px;
     background-size: cover;
 }
@@ -505,6 +522,7 @@ a {
 /* social */
 
 #social {
+    width: 90%;
     margin-top: 3rem;
 }
 
@@ -561,6 +579,7 @@ a {
     width: 700px;
     height: 490px;
     position: relative;
+    margin-right: 1rem;
 }
 
 .social__youtube::before {
@@ -705,10 +724,24 @@ a {
     border: 1px solid white;
 }
 
+.upBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    color: #1e90ff;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 1rem 1.5rem;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(52, 50, 50, 0.3);
+    -moz-box-shadow:    0px 3px 10px 0px rgba(52, 50, 50, 0.3);
+    box-shadow:         0px 3px 10px 0px rgba(52, 50, 50, 0.3);
+    z-index: 1;
+}
+
 @media (max-width: 1180px) {
-    #nav {
-        padding: 2rem 2rem;
-    }
 
     .toggle__btn {
         display: block;
@@ -721,5 +754,134 @@ a {
     .slide__title {
         font-size: 5rem;
     }
+
+    .product__title img {
+        width: 18rem;
+    }
+    .sub__title p {
+        font-size: 2.5rem;
+    }
+
+    .sub__name2 {
+        font-size: 1.4rem;
+    }
+
+    .sub {
+        flex-direction: column;
+    }
+
+    .sub__img, .sub__text {
+        width: 100%;
+    }
+    .sub__img img {
+        height: 40vh;
+    }
+
+    .sub__text {
+        padding: 2rem 4rem;
+    }
+    .more__wrap {
+        flex-direction: column;
+    }
+
+    .more__wrap li {
+        width: 100% !important;
+    }
+
+    .more__wrap li:nth-child(1) {
+        background: url("images/more/img_m_nutritional_on_1.png") no-repeat;
+        width:  25%;
+        height: 600px;
+        background-size: cover;
+    }
     
+    .more__wrap li:nth-child(2) {
+        background: url("images/more/img_m_nutritional_on_2.png") no-repeat;
+        width:  25%;
+        height: 600px;
+        background-size: cover;
+    }
+    
+    .more__wrap li:nth-child(3) {
+        background: url("images/more/img_m_nutritional_on_3.png") no-repeat;
+        width: 25%;
+        height: 600px;
+        background-size: cover;
+    }
+    
+    .more__wrap li:nth-child(4) {
+        background: url("images/more/img_m_nutritional_on_4.png") no-repeat;
+        width:  25%;
+        height: 600px;
+        background-size: cover;
+    }
+
+    .more__wrap a {
+        color: white;
+    }
+
+} 
+
+@media screen and (max-width: 768px) { 
+    .background__img1,
+    .background__img2,
+    .background__img3,
+    .background__img4 {
+        height: 50vh;
+    }
+    .slide__title {
+        font-size: 3rem;
+        top: 190px;
+    }
+    .slide4 .slide__title {
+        font-size: 4.5rem;
+    }
+    .slide4 .slide__sub-title {
+        font-size: 1.5rem;
+    }
+    .products {
+        padding: 2.5rem 1rem;
+    }
+    .product__title h2 {
+        font-size: 3rem;
+    }
+
+    .sub__name2 {
+        padding: 1.5rem 3rem;
+    }
+
+    .more__wrap li {
+        height: 300px !important;
+    }
+    .social__title {
+        width: 100%;
+    }
+
+    .social__wrap {
+        flex-direction: column;
+    }
+    .social__youtube {
+        width: 100%;
+        margin-right: 0;
+    }
+    .social__row1, .social__row2 {
+        justify-content: space-between;
+    }
+
+    .social__ins, .social__blog{
+        width: 50%;
+        height: 50%;
+    }
+
+    .social__row1 img, .social__row2 img {
+        width: 100%;
+        height: 100%;
+    }
+    .footer__logo, .footer__icons {
+        display: none;
+    }
+
+    .footer__right {
+        margin: 0 auto;
+    }
 }
