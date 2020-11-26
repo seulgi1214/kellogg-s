@@ -182,7 +182,6 @@
 .seed__col img {
     width: 100%;
     height: 275px;
-    margin-bottom: 1rem;
 }
 
 .seed__col span {
@@ -195,6 +194,7 @@
     font-size: 1.5rem;
     color: #949494;
     line-height: 28px;
+    margin: 2rem 0 0 0;
 }
 .seed__text, .innovation__text {
     padding: 0 12rem;
@@ -229,6 +229,12 @@
 .seed__youtube iframe {
     height: 55vh;
     width: 100%;
+}
+
+.desc3__img img{
+    display: block;
+    width: 100%;
+    padding-top: 4rem;
 }
 
 .nutrition__text {
@@ -273,6 +279,11 @@
 
 .nutrition__detail {
     padding: 0 12rem;
+}
+
+.nutrition__detail img {
+    display: block;
+    width: 100%;
 }
 
 .nutrition__detail h3,
@@ -335,8 +346,8 @@
 .innovation__image img {
     display: block;
     width: 32vw;
-    max-width: 450px;
 }
+
 .innovation__desc:nth-child(1),
 .innovation__desc:nth-child(3) {
     margin-right: 2rem;
@@ -357,11 +368,105 @@
     color: #949494;
 }
 
+
+
+@media (max-width: 1180px) {
+    .cereal__article1 {
+        flex-direction: column;
+    } 
+
+    .cereal__article1 img,
+    .cereal__article2 img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .columns {
+        padding-left: 0;
+    }
+
+    .columns-flex {
+        flex-direction: column;
+    }
+    .col-left img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .col-right-bottom {
+        margin-top: 5rem;
+    }
+
+    .col-right {
+        padding-left: 0;
+    }
+
+    .seed {
+        flex-direction: column;
+    }
+
+    .seed__right {
+        margin-left: 0;
+    }
+
+    .innovation__box1,     
+    .innovation__box3{
+        flex-direction: column;
+    }
+
+    .innovation__box2,
+    .innovation__box4 {
+        flex-direction: column-reverse;
+    }
+    .innovation__image img {
+        width: 100%;
+    }
+    .innovation__desc  {
+        margin-top: 1rem;
+    }
+    .innovation__desc:nth-child(2), 
+    .innovation__desc:nth-child(4){
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 768px) {
     #main .main__bg {
     background: url('images/cereal/key_visual_cereal_nutrition_768.png') no-repeat center 0;
     }
     .main__title {
         left: 16rem;
+    }
+
+    .cereal__desc__title li {
+        font-size: 1.2rem;
+    }
+
+    .cereal__article,
+    .seed__text, 
+    .innovation__text,
+    .seed__youtube,
+    .nutrition__text,
+    .nutrition__detail,
+    .nutrition__faq,
+    .innovation__wrap {
+        padding: 0 4rem;
+    }
+
+    .cereal__article, .seed__text {
+        margin-top: 5rem;
+    }
+
+    .image-align {
+        flex-wrap: wrap;
+    }
+
+    .image-align div:not(:first-child) {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .image-align img {
+        width: 100%;
     }
 }
