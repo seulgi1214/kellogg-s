@@ -1,12 +1,13 @@
 /* main */
 #main {
     position: relative;
+    padding-top: 8rem;
 }
 
 #main .main__bg {
     background: url('images/cereal/key_visual_cereal_nutrition_1920.png') no-repeat center 0;
     width: 100%;
-    height: 300px;
+    height: 320px;
 }
 
 .main__title {
@@ -14,9 +15,10 @@
     font-weight: 800;
     position: absolute;
     left: 20rem;
-    top: 6rem;
+    top: 50%;
     line-height: 70px;
     color: white;
+    transform: translateY(-50%);
 }
 
 /* cereal */
@@ -318,6 +320,11 @@
     color: #949494;
     font-size: 16px;
     padding: 2.5rem;
+    display: none;
+}
+
+.show__answer {
+    display:block;
 }
 
 .desc4 h3 {
@@ -433,7 +440,9 @@
 @media (max-width: 768px) {
     #main .main__bg {
     background: url('images/cereal/key_visual_cereal_nutrition_768.png') no-repeat center 0;
-    }
+    height: 240px;
+}
+
     .main__title {
         left: 16rem;
     }
@@ -468,5 +477,13 @@
 
     .image-align img {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__title {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }

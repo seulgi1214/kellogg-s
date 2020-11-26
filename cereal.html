@@ -17,22 +17,31 @@
 
 <body>
     <!-- nav -->
-    <nav id="nav" class="section section__container">
-        <div class="nav__logo"><a href="index.html"><img src="images/logo_768.png" alt=""></a></div>
-        <ul class="nav__lists">
-            <li><a href="brandProduct.html">Brands & Products</a></li>
-            <li><a href="cereal.html">Cereal & Nutrition</a></li>
-            <li><a href="">Better Days</a> </li>
-            <li><a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a></li>
-            <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
-        </ul>
-        <button class="toggle__btn"><i class="fas fa-bars"></i></button>
+    <nav id="nav" class="section">
+        <div class="nav__wrap section__container">
+            <div class="nav__logo"><a href="index.html"><img src="images/logo_768.png" alt=""></a></div>
+            <ul class="nav__lists">
+                <li><a href="brandProduct.html">Brands & Products</a></li>
+                <li><a href="cereal.html">Cereal & Nutrition</a></li>
+                <li><a href="better.html">Better Days</a> </li>
+                <li>
+                    <a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a>
+                    <ul class="kellogg__submenu submenu">
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">켈로그의 가치</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
+            </ul>
+            <button class="toggle__btn"><i class="fas fa-bars"></i></button>
+        </div>
     </nav>
     <!-- main -->
     <section id="main" class="section">
         <div class="main__bg">
+            <h1 class="main__title">Cereal &<br>Nutrition</h1>
         </div>
-        <h1 class="main__title">Cereal &<br>Nutrition</h1>
     </section>
     <!-- cereal -->
     <section id="cereal" class="section section__container">
@@ -202,14 +211,14 @@
                 <div class="faq__column">
                     <div class="nutrition__ask">
                         <i class="far fa-plus-square"></i>
-                        <span>열량과 트랜스지방의 섭취 기준은 없나요?</span>
+                        <span data-ask="0">열량과 트랜스지방의 섭취 기준은 없나요?</span>
                     </div>
-                    <p class="nutrition__answer">1일 영양성분 기준치에 대한 비율(%)은 식약처가 제시한 ‘1일 영양섭취 기준치’를 기준으로 하고 있으며, 열량과 트랜스 지방의 기준치는 설정되어 있지 않습니다.</p>
+                    <p class="nutrition__answer show__answer">1일 영양성분 기준치에 대한 비율(%)은 식약처가 제시한 ‘1일 영양섭취 기준치’를 기준으로 하고 있으며, 열량과 트랜스 지방의 기준치는 설정되어 있지 않습니다.</p>
                 </div>
                 <div class="faq__column">
                     <div class="nutrition__ask">
                         <i class="far fa-plus-square"></i>
-                        <span>우유와 함께 먹었을 경우 영양성분의 정보는 없나요?</span>
+                        <span data-ask="1">우유와 함께 먹었을 경우 영양성분의 정보는 없나요?</span>
                     </div>
                     <p class="nutrition__answer">식약처에서는 제품 자체에 포함된 영양 정보만을 제공하도록 안내하고 있습니다. 추가적인 내용이 궁금하신 경우
                         소비자상담실(080-023-6411)로 연락주세요.</p>
@@ -217,7 +226,7 @@
                 <div class="faq__column">
                     <div class="nutrition__ask">
                         <i class="far fa-plus-square"></i>
-                        <span class="nutrition__ask">열량과 트랜스지방의 섭취 기준영양소 필요량(%)은 어린이와 어른 모두에게 동일하게 적용되나요?</span>
+                        <span data-ask="2">열량과 트랜스지방의 섭취 기준영양소 필요량(%)은 어린이와 어른 모두에게 동일하게 적용되나요?</span>
                     </div>
                     <p class="nutrition__answer">어린이나, 임산부, 운동량, 활동량이 더 많은 사람 등 상황에 따라 영양소의 필요량은 다를 수 있습니다.
                         일반적인 기준을 의미하며, 참고 정보로 활용하시면 됩니다.</p>
@@ -322,7 +331,20 @@
         }
 
 
+        const ask = document.querySelectorAll('.nutrition__ask span');
+        const answer = document.querySelectorAll('.nutrition__answer')
+        let dataAsk = '';
 
+        function handler(e) {
+            const eventTarget = e.target;
+            dataAsk = eventTarget.dataset.ask;
+            console.log(dataAsk);
+            answer.forEach(el => el.classList.remove('show__answer'));
+            answer[dataAsk].classList.add('show__answer');
+
+        }
+
+        ask.forEach(el => el.addEventListener('click', handler))
 
     </script>
 </body>

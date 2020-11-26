@@ -1,12 +1,13 @@
 /* main */
 #main {
     position: relative;
+    padding-top: 8rem;
 }
 
 #main .main__bg {
     background: url('images/brand/key_visual_products_list_1920.png') no-repeat center 0;
     width: 100%;
-    height: 300px;
+    height: 320px;
 }
 
 .main__title {
@@ -14,10 +15,11 @@
     font-weight: 800;
     position: absolute;
     left: 20rem;
-    top: 6rem;
+    top: 50%;
     line-height: 70px;
     color: #2b292e;
     text-shadow: 1px 1px 2px white;
+    transform: translateY(-50%);
 }
 
 /* search */
@@ -104,6 +106,7 @@
     justify-content: space-between;
     font-family: 'Noto Sans KR', sans-serif;
     margin-top: 3rem;
+    background-color: white;
 }
 
 .product__list li {
@@ -133,9 +136,18 @@
 
 @media (max-width: 768px) {
     #main .main__bg {
-    background: url('images/brand/key_visual_products_list_768.png') no-repeat center 0;
-    }
+        background: url('images/brand/key_visual_products_list_768.png') no-repeat center 0;
+        height: 240px;
+}
     .main__title {
         left: 16rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__title {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }

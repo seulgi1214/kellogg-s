@@ -17,22 +17,31 @@
 
 <body>
     <!-- nav -->
-    <nav id="nav" class="section section__container">
-        <div class="nav__logo"><a href="index.html"><img src="images/logo_768.png" alt=""></a></div>
-        <ul class="nav__lists">
-            <li><a href="brandProduct.html">Brands & Products</a></li>
-            <li><a href="cereal.html">Cereal & Nutrition</a></li>
-            <li><a href="">Better Days</a> </li>
-            <li><a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a></li>
-            <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
-        </ul>
-        <button class="toggle__btn"><i class="fas fa-bars"></i></button>
+    <nav id="nav" class="section">
+        <div class="nav__wrap section__container">
+            <div class="nav__logo"><a href="index.html"><img src="images/logo_768.png" alt=""></a></div>
+            <ul class="nav__lists">
+                <li><a href="brandProduct.html">Brands & Products</a></li>
+                <li><a href="cereal.html">Cereal & Nutrition</a></li>
+                <li><a href="better.html">Better Days</a> </li>
+                <li>
+                    <a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a>
+                    <ul class="kellogg__submenu submenu">
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">켈로그의 가치</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
+            </ul>
+            <button class="toggle__btn"><i class="fas fa-bars"></i></button>
+        </div>
     </nav>
     <!-- main-->
     <section id="main" class="section">
         <div class="main__bg">
+            <h1 class="main__title">Brand &<br>Products</h1>
         </div>
-        <h1 class="main__title">Brand &<br>Products</h1>
     </section>
     <!-- search -->
     <section id="search" class="section section__container">
