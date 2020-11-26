@@ -47,7 +47,7 @@
     border-bottom: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     padding: 1.3rem 0;
-    
+    cursor: pointer;
 }
 
 .cereal__desc__title li:first-child {
@@ -59,6 +59,19 @@
     background-color: white;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 5rem 0;
+}
+
+.desc1, .desc2, .desc3, .desc4 {
+    display: none;
+}
+
+.change{
+    display: block;
+}
+
+.show {
+    background-color: #d30b2f;
+    color: white;
 }
 
 .cereal__desc h3 {
@@ -151,6 +164,197 @@
     font-weight: 400;
     line-height: 30px;
     margin: 1rem 0 0 0;
+}
+
+.seed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seed__left .seed__right {
+    width: 50%;
+}
+
+.seed__right {
+    margin-left: 2rem;
+}
+
+.seed__col img {
+    width: 100%;
+    height: 275px;
+    margin-bottom: 1rem;
+}
+
+.seed__col span {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.seed__col p {
+    font-size: 1.5rem;
+    color: #949494;
+    line-height: 28px;
+}
+.seed__text, .innovation__text {
+    padding: 0 12rem;
+    position: relative;
+}
+
+.seed__text i,
+.innovation__text i {
+    color:#d30b2f;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2.5rem 2.5rem;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seed__text p ,
+.innovation__text p {
+    text-align: center;
+    background-color: #fffceb;
+    font-size: 2rem;
+    padding: 4rem 8rem;
+}
+
+.seed__youtube {
+    padding: 0 12rem;
+}
+
+.seed__youtube iframe {
+    height: 55vh;
+    width: 100%;
+}
+
+.nutrition__text {
+    font-size: 1.6rem;
+    line-height: 30px;
+    padding: 0 12rem;
+}
+
+.nutrition__text p {
+    margin: 4rem 0 0 0;
+}
+
+.nutrition__columns__list1,
+.nutrition__columns__list2 {
+   font-family: 'Noto Sans KR', sans-serif;
+    padding: 5rem;
+    background-color: #fffceb;
+    list-style: inside;
+}
+
+.nutrition__columns__list2 {
+    padding-top: 0;
+}
+
+.nutrition__columns__list1 li:not(:first-child) {
+    margin-top: 6rem;
+ }
+
+.nutrition__columns__list2 li{
+    color: #949494;
+    font-size: 1.6rem;
+}
+
+.nutrition__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nutrition__desc {
+    font-size: 1.6rem;
+}
+
+.nutrition__detail {
+    padding: 0 12rem;
+}
+
+.nutrition__detail h3,
+.nutrition__faq h3 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.nutrition__faq {
+    padding: 0 12rem;
+    margin-top: 5rem;
+}
+
+.nutrition__ask {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.nutrition__ask span {
+    font-size: 16px;
+}
+
+.nutrition__ask i {
+    font-size: 30px;
+    margin-right: 1rem;
+    color: #949494;
+}
+
+.nutrition__answer {
+    background-color: #fffceb;
+    color: #949494;
+    font-size: 16px;
+    padding: 2.5rem;
+}
+
+.desc4 h3 {
+    margin-bottom: 8rem;
+}
+
+.innovation__wrap {
+    padding: 0 12rem;
+}
+
+.innovation__box1,
+.innovation__box2,
+.innovation__box3,
+.innovation__box4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innovation__box2,
+.innovation__box3,
+.innovation__box4 {
+    margin-top: 2rem;
+}
+
+.innovation__image img {
+    display: block;
+    width: 32vw;
+    max-width: 450px;
+}
+.innovation__desc:nth-child(1),
+.innovation__desc:nth-child(3) {
+    margin-right: 2rem;
+}
+
+.innovation__desc:nth-child(2),
+.innovation__desc:nth-child(4) {
+    margin-left: 2rem;
+}
+
+.innovation__desc span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.innovation__desc p {
+    font-size: 16px;
+    color: #949494;
 }
 
 @media (max-width: 768px) {

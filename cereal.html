@@ -38,12 +38,12 @@
     <section id="cereal" class="section section__container">
         <h1>Sereal & Nutrition</h1>
         <ul class="cereal__desc__title">
-            <li>시리얼의 영양</li>
-            <li>씨앗에서 식탁까지</li>
-            <li>영양정보 들여다보기</li>
-            <li>시리얼의 혁신</li>
+            <li class="show" data-id="0">시리얼의 영양</li>
+            <li data-id="1">씨앗에서 식탁까지</li>
+            <li data-id="2">영양정보 들여다보기</li>
+            <li data-id="3">시리얼의 혁신</li>
         </ul>
-        <div class="cereal__desc">
+        <div class="cereal__desc cereal__content desc1 change">
             <h3>시리얼의 영양</h3>
             <article class="cereal__desc-top">
                 <p>John Harvey Kellogg와 Will Keith Kellogg 형제는 114년 전에 건강한 식단의 중요한 식재료 중 하나인 곡물의<br>
@@ -121,13 +121,158 @@
                     </li>
                 </ol>
         </div>
-        </article>
+        <div class="cereal__desc cereal__content desc2">
+            <h3>씨앗에서 식탁까지</h3>
+            <article class="seed cereal__article">
+                <div class="seed__left">
+                    <div class="seed__col">
+                        <img src="images/cereal/from_seed_to_table_img_1.png" alt="">
+                    </div>
+                    <div class="seed__col">
+                        <span>“켈로그가 알려주는 진짜 시리얼에 대한 모든 것”</span>
+                        <p>세계 최대 시리얼 기업인 켈로그는 지난 114년간 쌓아온 깊은 역사와 노하우를 바탕으로 시리얼에 대한 잘못된 인식을 바로잡고자 시리얼이 지닌 간편함을 뛰어넘는 영양적인 가치를 전달하고자 합니다.
+                            켈로그의 ‘씨앗에서 식탁까지’는 엄선한 곡물을 찌고 구워 소비자들의 식탁에 진정한 한끼 식사로 오르기까지 시리얼의 리얼한 여정입니다.</p>
+                    </div>
+                </div>
+                <div class="seed__right">
+                    <div class="seed__col">
+                        <img src="images/cereal/from_seed_to_table_img_2.png" alt="">
+                    </div>
+                    <div class="seed__col">
+                        <p>한 알의 곡물 씨앗을 고르기 위해 농부들과 협력을 하고, 정성이 가득한 한 줌의 곡물에 우리 몸이 필요로 하는 비타민, 미네랄 등 다양한 영양 성분을 담아 다양한 시리얼 제품으로 탄생시키는 과정이지요. 켈로그의 시리얼 제품은 여러분의 주방에서 음식을 조리하는 것과 동일한 방식으로 만들어집니다.
+                            단지 그 규모와 양이 조금 더 크다는 것뿐이지요!</p>
+                    </div>
+                </div>
+            </article>
+            <article class="seed__text">
+                <i class="fas fa-quote-left"></i>
+                <p>한 줌의 곡물이 맛있는 식사가 되고, 농장에서 여러분의 식탁으로 전달되기까지 맛있고<br>
+                    건강한 시리얼 한 스푼을 위해 켈로그는 항상 최선의 노력을 다하겠습니다.</p>
+            </article>
+            <article class="seed__youtube">
+                <iframe src="https://www.youtube.com/embed/N0dLcTgQMgQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </div>
+        <div class="cereal__desc cereal__content desc3">
+            <h3>영양정보 들여다보기</h3>
+            <div>
+                <img src="images/cereal/nutritional_benefits_of_grains_img_1.png" alt="">
+            </div>
+            <div class="nutrition__text">
+                <p>
+                    건강한 식단을 원할 때 정확한 식품에 대한 정보를 확인하는 것부터 시작해야겠지요?<br>
+                    다행히도 이러한 영양 정보를 찾는 일은 그리 어렵지 않습니다.<br>
+                    켈로그의 모든 제품은 제품별 영양 성분에 대한 정보를 표기하고 있으며, 여러분은 쉽고 간단하게 원하는 영양 정보를 확인하실 수 있습니다.
+                </p>
+            </div>
+            <article class="nutrition__columns cereal__article">
+                <ul class="nutrition__columns__list1">
+                    <li>
+                        <span class="nutrition__title">“영양표시”란?</span>
+                        <p class="nutrition__desc">가공식품에 들어있는 영양성분에 관한 정보를 표시하는 것으로, 소비자가 건강한 식사에 필요한 식품을 확인하고 잘 선택할 수 있도록 돕기 위한 것입니다.</p>
+                    </li>
+                    <li>
+                        <span class="nutrition__title">“1일 영양성분 기준치”란?</span>
+                        <p class="nutrition__desc">일반인이 하루에 섭취해야 할 영양성분의 양을 정해 놓은 것입니다. (일반인 : 4세 이상 어린이 및 성인)</p>
+                    </li>
+                    <li>
+                        <span class="nutrition__title">“1일 영양성분 기준치에 대한 비율(%)”이란?</span>
+                        <p class="nutrition__desc">영양성분의 평균적인 1일 섭취 기준량의 몇 %인가를 나타낸 것입니다.</p>
+                    </li>
+                    <li>
+                        <span class="nutrition__title">“1회 섭취참고량”이란?</span>
+                        <p class="nutrition__desc">“1회 섭취참고량”은 만 3세 이상 소비계층이 통상적으로 소비하는 식품별 1회 섭취량과 시장조사 결과 등을 바탕으로
+                            설정한 값을 말합니다. 1회 섭취참고량은 식약처의 식품의 유형에 따라 다르게 설정되어 있습니다. 1회 섭취참고량을
+                            이해하는 것은 매우 중요합니다. 1회 섭취참고량을 섭취하였을 때 각 영양소별 섭취량을 기준으로 나에게 맞는 적절한
+                            분량을 조절할 수도 있습니다.</p>
+                    </li>
+                </ul>
+                <ul class="nutrition__columns__list2">
+                    <li>시리얼류: 30g</li>
+                    <li>곡류가공품 : 100g</li>
+                    <li>체중조절용조제식품 : 40g</li>
+                </ul>
+            </article>
+            <article class="nutrition__detail">
+                <h3>제품의 측면</h3>
+                <img src="images/cereal/nutritional_benefits_of_grains_img_2_1180.png" alt="">
+            </article>
+            <article class="nutrition__faq">
+                <h3>FAQ</h3>
+                <div class="faq__column">
+                    <div class="nutrition__ask">
+                        <i class="far fa-plus-square"></i>
+                        <span>열량과 트랜스지방의 섭취 기준은 없나요?</span>
+                    </div>
+                    <p class="nutrition__answer">1일 영양성분 기준치에 대한 비율(%)은 식약처가 제시한 ‘1일 영양섭취 기준치’를 기준으로 하고 있으며, 열량과 트랜스 지방의 기준치는 설정되어 있지 않습니다.</p>
+                </div>
+                <div class="faq__column">
+                    <div class="nutrition__ask">
+                        <i class="far fa-plus-square"></i>
+                        <span>우유와 함께 먹었을 경우 영양성분의 정보는 없나요?</span>
+                    </div>
+                    <p class="nutrition__answer">식약처에서는 제품 자체에 포함된 영양 정보만을 제공하도록 안내하고 있습니다. 추가적인 내용이 궁금하신 경우
+                        소비자상담실(080-023-6411)로 연락주세요.</p>
+                </div>
+                <div class="faq__column">
+                    <div class="nutrition__ask">
+                        <i class="far fa-plus-square"></i>
+                        <span class="nutrition__ask">열량과 트랜스지방의 섭취 기준영양소 필요량(%)은 어린이와 어른 모두에게 동일하게 적용되나요?</span>
+                    </div>
+                    <p class="nutrition__answer">어린이나, 임산부, 운동량, 활동량이 더 많은 사람 등 상황에 따라 영양소의 필요량은 다를 수 있습니다.
+                        일반적인 기준을 의미하며, 참고 정보로 활용하시면 됩니다.</p>
+                </div>
+            </article>
+        </div>
+        <div class="cereal__desc cereal__content desc4">
+            <h3>시리얼의 혁신</h3>
+            <article class="innovation__text">
+                <i class="fas fa-quote-left"></i>
+                <p>19세기에 첫 등장 후 지난 100년 동안 더 맛있고 건강하게 변화하는 시리얼<br>
+                    옥수수, 밀, 쌀 등 곡류를 주원료로 비타민류와 무기질류 등 영양성분을 강화<br>
+                    푸레이크, 오트밀, 그래놀라, 뮤즐리, 선식 등 다양한 형태의 가공식품을 지칭
+                </p>
+            </article>
+            <article class="innovation__wrap">
+                <div class="innovation__box1">
+                    <div class="innovation__image">
+                        <img src="images/cereal/cereal_innovation_img_1.png" alt="">
+                    </div>
+                    <div class="innovation__desc">
+                        <span>1863년에 발명된 꿀과 함께 오븐에 구운 통곡물, 그래놀라</span>
+                        <p>시리얼은 1980년대 푸레이크로 국내 시장에 처음 진출했습니다. 그래서인지 국내에서는 시리얼 하면 푸레이크가 시리얼의 원조라는 생각이 지배적이지만 가장 먼저 개발된 형태의 시리얼은 1863년에 발명된 그래놀라입니다. 19세기 후반의 그래놀라는 통밀 가루를 반죽한 뒤 건조한 건강식으로 다소 딱딱한 형태였지만 20세기에 들어서며 그래놀라는 점차 통곡물에 꿀이나 시럽을 더해 오븐에 구운 뒤 말린 과일, 견과류와 곁들여 먹는 현대적인 모습으로 변화했습니다. 오늘날 그래놀라는 통곡물에 과일을 더한 만큼 비타민, 무기질, 식이섬유를 골고루 섭취할 수 있어 최근 국내 시장에서 인기가 높은 시리얼이기도 합니다.</p>
+                    </div>
+                </div>
+                <div class="innovation__box2">
+                    <div class="innovation__desc">
+                        <span>익히지 않고 자연 그대로 먹는 유럽의 건강식 뮤즐리</span>
+                        <p>그 다음 등장한 시리얼은 뮤즐리로 독일, 영국 등 유럽에서 특히 대중적으로 사랑받는 제품입니다. 뮤즐리는 1900년대 초 스위스 의사 막시밀리안 비르헤르-베너가 취리히에서 운영하던 건강 클리닉의 환자들을 위해 만들어졌습니다. 뮤즐리는 곡물, 과일, 견과류를 가공하지 않고 자연 건조시킨 뒤 혼합해 만드는 것이 특징입니다. 가공을 최소화한 뮤즐리는 원재료의 맛과 식감을 느낄 수 있으며 식이섬유가 풍부하고 꿀이나 시럽이 첨가되지 않아 열량과 당이 낮은 편입니다.</p>
+                    </div>
+                    <div class="innovation__image">
+                        <img src="images/cereal/cereal_innovation_img_2.png" alt="">
+                    </div>
+                </div>
+                <div class="innovation__box3">
+                    <div class="innovation__image">
+                        <img src="images/cereal/cereal_innovation_img_3.png" alt="">
+                    </div>
+                    <div class="innovation__desc">
+                        <span>우연이 낳은 역사적인 발명, 푸레이크</span>
+                        <p>뮤즐리 탄생과 비슷한 시기에 켈로그 창업자 윌리엄 키이스 켈로그와 그의 형 존 하비 켈로그 박사가 운영하는 요양원의 환자들을 위한 건강 식품으로 푸레이크를 발명하면서 시리얼의 대중화에 기여했습니다. 소화가 잘 되는 빵을 개발하던 켈로그 형제는 우연히 밀가루 반죽이 건조되어 생긴 얇은 형태의 밀 푸레이크를 발견했고 이를 구운 것이 푸레이크의 시초입니다. 푸레이크는 옥수수를 주성분으로 보리, 호밀 등 곡물을 반죽한 뒤 얇게 압축하고 구워 낸 형태로, 대표적인 푸레이크 제품으로는 켈로그 콘푸로스트가 있습니다.</p>
+                    </div>
+                </div>
+                <div class="innovation__box4">
+                    <div class="innovation__desc">
+                        <span>에너지바, 컵시리얼 등 혁신적인 신제품 개발 지속</span>
+                        <p>켈로그는 “건강한 세상을 만들기 위해 품질 좋은 제품을 만들어야 한다”는 창업자 W.K. 켈로그의 강한 신념 아래 새롭고 혁신적인 제품을 지속적으로 개발하고 있습니다. 또한 발 빠르게 변화하는 시장트렌드에 맞춰 영양뿐만 아니라 간편함을 더한 다양한 종류의 시리얼을 비롯해 에너지바, 컵시리얼 제품들도 연이어 선보이고 있습니다. 특히 켈로그는 바쁜 일상에서 영양과 건강을 챙기려는 현대인들의 생활 패턴에 맞춰 에너지바를 개발했습니다. 에너지바는 한 손에 쏙 들어오는 크기로 휴대하기 편리하며, 언제 어디서나 간편하게 영양을 섭취할 수 있는 것이 특징입니다.</p>
+                    </div>
+                    <div class="innovation__image">
+                        <img src="images/cereal/cereal_innovation_img_4.png" alt="">
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
-
-
-
-
     <!-- footer -->
     <footer id="footer">
         <div class="section section__container footer__wrap">
@@ -156,6 +301,29 @@
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         }
         upBtn.addEventListener('click', goToUpHandler)
+
+
+        //누르면 배경, 컬러 변경 & 내용 보여주기
+
+        const listItem = document.querySelectorAll('.cereal__desc__title li');
+        const cerealContents = document.querySelectorAll('.cereal__content');
+        let id = '';
+
+        listItem.forEach(el => el.addEventListener('click', colorChangeHandler))
+
+
+        function colorChangeHandler(e) {
+            listItem.forEach(el => el.classList.remove('show'));
+            this.classList.add('show');
+            const target = e.target;
+            id = target.dataset.id;
+            cerealContents.forEach(el => el.classList.remove('change'));
+            cerealContents[id].classList.add('change');
+        }
+
+
+
+
     </script>
 </body>
 
