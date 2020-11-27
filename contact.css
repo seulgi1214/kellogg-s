@@ -1,0 +1,110 @@
+#main {
+    position: relative;
+    padding-top: 8rem;
+}
+
+#main .main__bg {
+    background: url('images/contact/key_visual_about_1920.png') no-repeat center 0;
+    height: 320px;
+    }
+
+.main__title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    position: absolute;
+    left: 20rem;
+    top: 50%;
+    line-height: 70px;
+    transform: translate(-50%, -50% );
+    color: white;
+}
+
+#contact {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#contact h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 5rem 0;
+    border-bottom: 4px solid #c20f2f;
+    font-family: 'Texturina', serif;
+}
+
+.address {
+    margin-top: 5rem;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 5rem;
+}
+
+.address h1 {
+    font-size: 4rem;
+}
+
+.map iframe{
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.map address {
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.wayAnsung p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.howTo__wrap {
+    display: flex;
+    justify-content: start;
+}
+
+.howTo strong {
+    margin-bottom: 1rem;
+    color: #2f2f2f;
+}
+
+.howTo strong, .howTo span {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.howTo:last-child {
+    margin-left: 5rem;
+}
+
+.customer {
+    margin-top: 5rem;
+    background-color: #f1f6f9;
+    padding: 6rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.customer h5, .customer__col span{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.customer__col p {
+    font-weight: 300;
+    color: gray;
+    font-size: 1.6rem;
+    margin: .5rem 0 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .howTo__wrap {
+        flex-direction: column;
+    }
+
+    .howTo:last-child {
+        margin: 2rem 0 0 0;
+    }
+}

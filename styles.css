@@ -89,16 +89,14 @@ a {
 
 .nav__lists > li .kellogg__submenu {
     font-family: 'Noto Sans KR', sans-serif;
-    display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
+    transition: 1s;
+    display: none;
 }
-
 .nav__lists > li:hover .kellogg__submenu {
     display: block;
-
 }
-
 
 .nav__lists > li .kellogg__submenu li {
     margin-left: 0;

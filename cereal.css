@@ -60,11 +60,11 @@
     margin-top: 5rem;
     background-color: white;
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 5rem 0;
 }
 
 .desc1, .desc2, .desc3, .desc4 {
     display: none;
+    padding: 5rem 12rem;
 }
 
 .change{
@@ -79,6 +79,7 @@
 .cereal__desc h3 {
     text-align: center;
     font-size: 3.5rem;
+    margin-bottom: 5rem;
 }
 
 .cereal__desc-top {
@@ -86,11 +87,7 @@
     background-color: #fffceb;
     font-size: 2rem;
     padding: 3rem 8rem;
-    margin: 5rem 0;
-}
-
-.cereal__article {
-    padding: 4rem 12rem;
+    margin-bottom: 5rem;
 }
 
 .cereal__article h5 {
@@ -199,7 +196,6 @@
     margin: 2rem 0 0 0;
 }
 .seed__text, .innovation__text {
-    padding: 0 12rem;
     position: relative;
 }
 
@@ -225,12 +221,18 @@
 }
 
 .seed__youtube {
-    padding: 0 12rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50%;
 }
 
 .seed__youtube iframe {
-    height: 55vh;
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
 .desc3__img img{
@@ -242,7 +244,6 @@
 .nutrition__text {
     font-size: 1.6rem;
     line-height: 30px;
-    padding: 0 12rem;
 }
 
 .nutrition__text p {
@@ -279,10 +280,6 @@
     font-size: 1.6rem;
 }
 
-.nutrition__detail {
-    padding: 0 12rem;
-}
-
 .nutrition__detail img {
     display: block;
     width: 100%;
@@ -295,7 +292,6 @@
 }
 
 .nutrition__faq {
-    padding: 0 12rem;
     margin-top: 5rem;
 }
 
@@ -331,10 +327,6 @@
     margin-bottom: 8rem;
 }
 
-.innovation__wrap {
-    padding: 0 12rem;
-}
-
 .innovation__box1,
 .innovation__box2,
 .innovation__box3,
@@ -367,15 +359,14 @@
 
 .innovation__desc span {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .innovation__desc p {
     font-size: 16px;
     color: #949494;
+    line-height: 26px;
 }
-
-
 
 @media (max-width: 1180px) {
     .cereal__article1 {
@@ -413,7 +404,7 @@
     }
 
     .seed__right {
-        margin-left: 0;
+        margin: 2rem 0 0 0;
     }
 
     .innovation__box1,     
@@ -431,9 +422,14 @@
     .innovation__desc  {
         margin-top: 1rem;
     }
+
     .innovation__desc:nth-child(2), 
     .innovation__desc:nth-child(4){
         margin-left: 0;
+    }
+
+    .seed__text {
+        margin-top: 5rem;
     }
 }
 
@@ -451,18 +447,11 @@
         font-size: 1.2rem;
     }
 
-    .cereal__article,
-    .seed__text, 
-    .innovation__text,
-    .seed__youtube,
-    .nutrition__text,
-    .nutrition__detail,
-    .nutrition__faq,
-    .innovation__wrap {
-        padding: 0 4rem;
+    .desc1, .desc2, .desc3, .desc4  {
+        padding: 2rem 4rem;
     }
 
-    .cereal__article, .seed__text {
+    .cereal__article {
         margin-top: 5rem;
     }
 
@@ -477,6 +466,14 @@
 
     .image-align img {
         width: 100%;
+    }
+
+    .cereal__desc-top {
+        padding: 3rem;
+    }
+
+    .innovation__text p {
+        padding: 4rem 2rem;
     }
 }
 

@@ -1,0 +1,125 @@
+
+#main {
+    position: relative;
+    padding-top: 8rem;
+}
+
+#main .main__bg {
+    background: url('images/value/key_visual_about_1920.png') no-repeat center 0;
+    height: 320px;
+    }
+
+.main__title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    position: absolute;
+    left: 20rem;
+    top: 50%;
+    line-height: 70px;
+    transform: translate(-50%, -50% );
+    color: white;
+}  
+
+#value {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#value h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 5rem 0;
+    border-bottom: 4px solid #c20f2f;
+}
+
+.value__wrap {
+    padding: 0 12rem;
+}
+
+.value__img {
+    display: block;
+    width: 100%;
+}
+
+
+.value__quote__wrap {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.value__blockquote blockquote {
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0 7rem;
+    font-family: 'Texturina', serif;
+    font-style: italic;
+}
+
+.value__blockquote {
+    position: relative;
+}
+
+.value__blockquote::before {
+    content: "";
+    position: absolute;
+    background: url('images/value/kelloggs_value_bg_left.png') no-repeat center;
+    top: 10px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.value__blockquote::after {
+    content: "";
+    position: absolute;
+    background: url('images/value/kelloggs_value_bg_right.png') no-repeat center;
+    top: 10px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.value__quote__wrap span {
+    font-size: 16px;
+}
+
+.value__lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.value__list__box img {
+    width: 100%;
+}
+
+.value__list__box p {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.value__list {
+    list-style: outside;
+    padding: 0 0 0 2.5rem;
+}
+
+.value__list li {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.value__list li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .value__wrap {
+        padding: 0 5rem;
+    }
+    .value__lists {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+    
+}
