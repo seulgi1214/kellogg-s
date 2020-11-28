@@ -67,6 +67,10 @@ a {
     margin-left: 70px;
 }
 
+.nav__list__wrap .closeBtn {
+    display: none;
+}
+
 .nav__lists a {
     color: #3d3d3d;
 }
@@ -94,6 +98,7 @@ a {
     transition: 1s;
     display: none;
 }
+
 .nav__lists > li:hover .kellogg__submenu {
     display: block;
 }
@@ -103,6 +108,11 @@ a {
     padding: 1rem 2rem;
     font-weight: 400;
     font-size: 1.7rem;
+}
+
+.nav__lists > li .kellogg__submenu li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .kellogg__submenu li:hover {
@@ -120,17 +130,15 @@ a {
     border-radius: 5px;
 }
 
-.toggle__btn {
-    display: none;
-}
-
 .toggle__btn{
+    display: none;
     outline: none;
     border: none;
     background-color: transparent;
     font-size: 25px;
     position: absolute;
     right: 2rem;
+    cursor: pointer;
 }
 
 .toggle__btn i {
@@ -775,8 +783,57 @@ a {
 
     .nav__lists {
         display: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem 0 1rem 2rem;
     }
 
+    .nav__list__wrap {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        width: 350px;
+        position: fixed;
+        top: 8rem;
+        right: 0;
+    }
+
+    .nav__list__wrap .closeBtn{
+        display: none;
+        position: absolute;
+        top: -60px;
+        right: 2.8rem;
+        z-index: 1;
+        font-size: 28px;
+        background-color: transparent;
+        color:#757575;
+        cursor: pointer;
+    }
+
+    .nav__lists::before {
+        content: "";
+        width: 350px;
+        position: absolute;
+        top: -78px;
+        right: 0;
+        background-color: white;
+        height: 78px;
+    }
+
+    .nav__lists li {
+        font-size: 2rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .nav__lists > li .kellogg__submenu {
+        width: 50%;
+    }
+    
     .slide__title {
         font-size: 5rem;
     }

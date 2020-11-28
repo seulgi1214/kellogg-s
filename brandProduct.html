@@ -20,20 +20,23 @@
     <nav id="nav" class="section">
         <div class="nav__wrap section__container">
             <div class="nav__logo"><a href="index.html"><img src="images/logo_768.png" alt=""></a></div>
-            <ul class="nav__lists">
-                <li><a href="brandProduct.html">Brands & Products</a></li>
-                <li><a href="cereal.html">Cereal & Nutrition</a></li>
-                <li><a href="better.html">Better Days</a> </li>
-                <li>
-                    <a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a>
-                    <ul class="kellogg__submenu submenu">
-                        <li><a href="introduceCompany.html">회사소개</a></li>
-                        <li><a href="value.html">켈로그의 가치</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </li>
-                <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
-            </ul>
+            <div class="nav__list__wrap">
+                <i class="fas fa-times closeBtn"></i>
+                <ul class="nav__lists">
+                    <li><a href="brandProduct.html">Brands & Products</a></li>
+                    <li><a href="cereal.html">Cereal & Nutrition</a></li>
+                    <li><a href="better.html">Better Days</a> </li>
+                    <li>
+                        <a href="">About Kellogg's<i class="fas fa-chevron-down"></i></a>
+                        <ul class="kellogg__submenu submenu">
+                            <li><a href="introduceCompany.html">회사소개</a></li>
+                            <li><a href="value.html">켈로그의 가치</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><button class="nav__btn">Kellogg's Shop</button></a> </li>
+                </ul>
+            </div>
             <button class="toggle__btn"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
@@ -167,15 +170,7 @@
         </div>
     </footer>
     <button class="upBtn"><i class="fas fa-arrow-up"></i></button>
-    <script>
-        //페이지 상단으로 이동하는 이벤트
-        const upBtn = document.querySelector('.upBtn');
-
-        function goToUpHandler() {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        }
-        upBtn.addEventListener('click', goToUpHandler)
-    </script>
+    <script type="module" src="function.js"></script>
 </body>
 
 </html>
