@@ -12,6 +12,6 @@ https://kellogg-s.vercel.app/
 + javaScript
 
 ## 프로젝트 설명
-
+W3C HTML/ CSS 웹표준 준수 
 반응형을 적용한 캘로그 홈페이지입니다.
 
