@@ -50,7 +50,7 @@
     </section>
     <!-- cereal -->
     <section id="cereal" class="section section__container">
-        <h1>Sereal & Nutrition</h1>
+        <h1>Cereal & Nutrition</h1>
         <ul class="cereal__desc__title">
             <li class="show" data-id="0">시리얼의 영양</li>
             <li data-id="1">씨앗에서 식탁까지</li>
@@ -67,9 +67,9 @@
             <article class="cereal__article cereal__article1">
                 <div class="article1-left">
                     <h5>비타민과 미네랄</h5>
-                    <p>건강한 일상을 위하여 우리는 다양한 영양소를 골고루 섭취하는 것<br>이 중요합니다.</p>
-                    <p>곡물의 장점을 한껏 살린 켈로그 시리얼은 다양하고 풍부한 영양소<br>를 함유하고 있습니다. 특히 복합 탄수화물과 식이섬유가 풍부하고<br>지방이 적으며 주요 비타민과 미네랄의 공급도 도와줍니다.</p>
-                    <p>켈로그 시리얼로 하루 동안 필요한 다양한 영양소를 보충하며 풍요<br>롭고 건강한 일상을 즐겨보세요.</p>
+                    <p>건강한 일상을 위하여 우리는 다양한 영양소를 골고루 섭취하는 것이 중요합니다.</p>
+                    <p>곡물의 장점을 한껏 살린 켈로그 시리얼은 다양하고 풍부한 영양소를 함유하고 있습니다. 특히 복합 탄수화물과 식이섬유가 풍부하고<br>지방이 적으며 주요 비타민과 미네랄의 공급도 도와줍니다.</p>
+                    <p>켈로그 시리얼로 하루 동안 필요한 다양한 영양소를 보충하며 풍요롭고 건강한 일상을 즐겨보세요.</p>
                 </div>
                 <div class="article1-right">
                     <img src="images/cereal/cereal_nutrition_img_1.png" alt="">
@@ -345,15 +345,8 @@
 
         ask.forEach(el => el.addEventListener('click', handler))
 
-
-        //페이지 상단으로 이동하는 이벤트
-        const upBtn = document.querySelector('.upBtn');
-
-        function goToUpHandler() {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        }
-        upBtn.addEventListener('click', goToUpHandler)
-
+    </script>
+    <script>
         //토글버튼 제어하면서 sidenav 켜고 끄기
         const toggleBtn = document.querySelector('.toggle__btn');
         const navLists = document.querySelector('.nav__lists');
@@ -378,8 +371,17 @@
         closeBtn.addEventListener('click', sideNavClose)
 
 
-    </script>
 
+        //페이지 상단으로 이동하는 이벤트
+        const upBtn = document.querySelector('.upBtn');
+
+        function goToUpHandler() {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        }
+        upBtn.addEventListener('click', goToUpHandler)
+
+
+    </script>
 </body>
 
 </html>

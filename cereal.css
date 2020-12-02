@@ -1,3 +1,7 @@
+ol {
+    padding: 0;
+}
+
 /* main */
 #main {
     position: relative;
@@ -92,7 +96,7 @@
 
 .cereal__article h5 {
     font-size: 3rem;
-    margin-bottom: 4rem;
+    margin: 2rem 0 4rem 0;
 }
 
 .cereal__article1 {
@@ -100,15 +104,24 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.article1-left {
+    width: 100%;
+}
+
 .article1-left p {
     font-size: 1.8rem;
     color: gray;
     margin: 3rem 0 0 0;
 }
+.article1-right {
+    width: 100%;
+    margin: 2rem 0 0 2rem;
+}
 
 .cereal__article1 img {
     display: block;
-    width: 400px;
+    width: 100%
 }
 
 .columns {
@@ -124,7 +137,7 @@
 }
 
 .image-align img {
-    width: 300px;
+    width: 100%;
     display: block;
 }
 
@@ -145,9 +158,15 @@
 
 .col-right {
     padding-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+.col-right-top,
+.col-right-bottom {
+    width: 100%;
+}
+
+.col-right-bottom {
+    margin-top: 4rem;
 }
 
 .col__title {
@@ -373,10 +392,8 @@
         flex-direction: column;
     } 
 
-    .cereal__article1 img,
-    .cereal__article2 img {
+    .cereal__article2 img{
         width: 100%;
-        margin-top: 1rem;
     }
 
     .columns {
@@ -384,15 +401,12 @@
     }
 
     .columns-flex {
-        flex-direction: column;
+        display: block;
     }
+
     .col-left img {
         width: 100%;
         margin-bottom: 5rem;
-    }
-
-    .col-right-bottom {
-        margin-top: 5rem;
     }
 
     .col-right {
